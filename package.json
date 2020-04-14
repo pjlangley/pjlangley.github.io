@@ -7,7 +7,6 @@
     "url": "git+https://github.com/pjlangley/pjlangley.github.io.git"
   },
   "scripts": {
-    "prettier": "prettier --write index.html",
     "build": "node-sass ./scss/main.scss --output-style compressed | postcss -u autoprefixer -o ./assets/css/main.css",
     "build:watch": "node-sass ./scss/main.scss -w | postcss -u autoprefixer -o ./assets/css/main.css"
   },
@@ -37,7 +36,7 @@
     }
   },
   "lint-staged": {
-    "*.{html,scss,md}": "prettier --write",
-    "*.{scss}": "npm run build"
+    "*.{html,scss,md}": "prettier --write --prose-wrap always",
+    "*.scss": "npm run build"
   }
 }
