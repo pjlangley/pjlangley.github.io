@@ -1,0 +1,37 @@
+.feature-box {
+  box-shadow: 0px 0px 2px 1px #eae8e8;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .feature-col {
+    min-height: 745px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature-box {
+    box-shadow: 4px 4px 2px 5px #eae8e8;
+  }
+
+  .feature-col {
+    min-height: 700px;
+  }
+}
+
+.feature-box__feature-title {
+  color: #5c404b;
+}
+
+.feature-box__working-together-icon {
+  margin-top: -35px;
+  width: 280px;
+}
+
+@media (min-width: 992px) {
+  .feature-box__working-together-icon {
+    max-width: 240px;
+  }
+}

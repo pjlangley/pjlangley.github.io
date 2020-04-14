@@ -1,0 +1,44 @@
+.collab-partners__collab-title {
+  color: #40596a;
+}
+
+.collab-partners__collab-partner {
+  padding-top: 1rem;
+  opacity: 0.5;
+}
+
+.collab-rocket-wrap {
+  text-align: center;
+}
+
+.collab-rocket-wrap__collab-rocket {
+  max-width: 256px;
+}
+
+@media (min-width: 576px) {
+  .collab-rocket {
+    margin-top: -70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .collab-rocket-wrap {
+    text-align: right;
+  }
+
+  .collab-rocket-wrap__collab-rocket {
+    max-width: 512px;
+    margin-top: -90px;
+  }
+}
+
+@media (min-width: 992px) {
+  .collab-rocket-wrap {
+    padding-right: 120px;
+  }
+
+  .collab-rocket-wrap__collab-rocket {
+    max-width: 256px;
+    margin-top: -130px;
+  }
+}
