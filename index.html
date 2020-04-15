@@ -37,8 +37,14 @@
 
     <div class="container">
       <header class="header">
-        <h1 class="header__heading">React JS consultant</h1>
-        <small class="header__consultant">Peter J Langley</small>
+        <div itemscope itemtype="http://schema.org/Occupation">
+          <h1 itemprop="name" class="header__heading">React JS consultant</h1>
+        </div>
+        <div itemscope itemtype="http://schema.org/Person">
+          <small itemprop="name" class="header__consultant"
+            >Peter J Langley</small
+          >
+        </div>
         <p class="header__strapline">
           <em>
             Empowering software teams, people and companies to achieve their
@@ -50,14 +56,19 @@
       <section class="collaborating"></section>
 
       <section class="row mt-5">
-        <section class="col-lg-4">
+        <section
+          itemscope
+          itemtype="https://schema.org/Service"
+          class="col-lg-4"
+        >
           <div class="feature-box feature-col">
             <h2 class="feature-box__feature-title">Work</h2>
             <p>
               Luckily, I’ve been involved with leading some large and long
               running React JS projects for some big clients; they have bet big
-              on JavaScript to deliver their frontend products successfully, and
-              at a competitive pace.
+              on <span itemprop="serviceType">JavaScript</span> to deliver their
+              <span itemprop="serviceOutput">frontend products</span>
+              successfully, and at a competitive pace.
             </p>
             <div class="row no-gutters">
               <div
@@ -65,15 +76,19 @@
               >
                 <img
                   src="assets/images/icons/teamwork.svg"
-                  alt="React JS developers on laptop"
-                  title="React JS developers on laptop"
+                  alt="React JS developers on laptops"
+                  title="React JS developers on laptops"
                 />
               </div>
             </div>
             <p class="mt-4">
               It’s an extremely exciting landscape; I’ve crafted solutions on
-              the web, desktop and mobile; <strong>React JS</strong>,
-              <strong>Electron</strong> and <strong>React Native</strong>,
+              <span itemprop="serviceOutput">websites</span>,
+              <span itemprop="serviceOutput">desktop apps</span> and
+              <span itemprop="serviceOutput">mobile apps</span>;
+              <strong itemprop="serviceType">React JS</strong>,
+              <strong itemprop="serviceType">Electron</strong> and
+              <strong itemprop="serviceType">React Native</strong>,
               respectively.
             </p>
           </div>
@@ -139,62 +154,80 @@
           <h2 class="collab-partners__collab-title">Collaboration Partners</h2>
           <div class="row no-gutters">
             <div
+              itemscope
+              itemtype="https://schema.org/Organization"
               class="col-6 col-md-4 col-lg-4 mr-lg-2 collab-partners__collab-partner"
             >
+              <meta itemprop="name" content="SSE Enterprise" />
               <img
                 src="assets/images/logos/sse.png"
                 alt="SSE logo"
-                title="SSE"
+                title="Collaboration with SSE Enterprise"
                 height="35"
               />
             </div>
             <div
+              itemscope
+              itemtype="https://schema.org/Organization"
               class="col-6 col-md-4 col-lg-4 mr-lg-2 collab-partners__collab-partner"
             >
+              <meta itemprop="name" content="Ladbrokes" />
               <img
                 src="assets/images/logos/ladbrokes.png"
                 alt="Ladbrokes logo"
-                title="Ladbrokes"
+                title="Collaboration with Ladbrokes"
                 width="120"
               />
             </div>
             <div
+              itemscope
+              itemtype="https://schema.org/Organization"
               class="col-6 col-md-4 col-lg-4 mr-lg-2 collab-partners__collab-partner"
             >
+              <meta itemprop="name" content="Coral" />
               <img
                 src="assets/images/logos/coral.png"
                 alt="Coral logo"
-                title="Coral"
+                title="Collaboration with Coral"
                 width="120"
               />
             </div>
             <div
+              itemscope
+              itemtype="https://schema.org/Organization"
               class="col-6 col-md-4 col-lg-4 mr-lg-2 collab-partners__collab-partner"
             >
+              <meta itemprop="name" content="Gamesys" />
               <img
                 src="assets/images/logos/gamesys.png"
                 alt="Gamesys logo"
-                title="Gamesys"
+                title="Collaboration with Gamesys"
                 width="120"
               />
             </div>
             <div
+              itemscope
+              itemtype="https://schema.org/Organization"
               class="col-6 col-sm-12 col-md-4 col-lg-4 mr-lg-2 mr-md-4 collab-partners__collab-partner"
             >
+              <meta itemprop="name" content="Etch" />
               <img
                 src="assets/images/logos/etch.png"
                 alt="Etch logo"
-                title="Etch"
+                title="Collaboration with Etch"
                 width="80"
               />
             </div>
             <div
+              itemscope
+              itemtype="https://schema.org/Organization"
               class="col-6 col-md-4 col-lg-4 collab-partners__collab-partner"
             >
+              <meta itemprop="name" content="Brightsouth" />
               <img
                 src="assets/images/logos/brightsouth.png"
                 alt="Brightsouth logo"
-                title="Brightsouth"
+                title="Collaboration with Brightsouth"
                 width="140"
               />
             </div>
@@ -206,7 +239,7 @@
         <img
           class="collab-rocket-wrap__collab-rocket"
           src="assets/images/icons/collaboration-rocket.svg"
-          alt="Collaboration success"
+          alt="Collaboration success (rocket)"
           title="Collaboration success"
         />
       </div>
@@ -215,10 +248,15 @@
       <section class="row mt-2">
         <div class="col-sm feature-box">
           <div class="p-2 location__location-map">
-            <div class="location__map-overlay">
+            <div
+              itemscope
+              itemtype="https://schema.org/Place"
+              class="location__map-overlay"
+            >
               <span class="location__map-overlay-text">
                 I’m normally based in the South Coast of England, near
-                Southampton, but I'm well prepared for remote working.
+                <span itemprop="address">Southampton</span>, but I'm well
+                prepared for remote working.
               </span>
             </div>
           </div>
