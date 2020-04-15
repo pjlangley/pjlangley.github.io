@@ -34,13 +34,3 @@
 .contact__method--opacity:hover {
   opacity: 0.9;
 }
-
-.contact__contact-icon {
-  width: 100%;
-}
-
-@media (min-width: 992px) {
-  .contact__contact-icon {
-    max-width: 250px;
-  }
-}
