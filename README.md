@@ -2,8 +2,8 @@
 
 Hello. My consultancy focus is currently through the successful software
 delivery of projects written in React JS. Please visit
-[pjlangley.com](https://pjlangley.com) or the
-[pjlangley.github.io](https://pjlangley.github.io) mirror to find out more.
+[pjlangley.com](https://pjlangley.com) or
+[pjlangley.github.io](https://pjlangley.github.io) to find out more.
 
 ## License
 
