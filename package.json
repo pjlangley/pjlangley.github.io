@@ -1,42 +1,29 @@
 {
   "name": "pjlangley.com",
-  "version": "2.0.0",
-  "description": "React JS consultancy from Peter J Langley",
+  "version": "3.0.0",
+  "description": "Personal services website for Peter J Langley",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pjlangley/pjlangley.github.io.git"
   },
   "scripts": {
-    "build:prod": "node-sass ./scss/main.scss --output-style compressed | postcss -u autoprefixer -o ./assets/css/main.css",
-    "build:watch": "node-sass ./scss/main.scss ./assets/css/main.css -w"
+    "build:prod": "NODE_ENV=production npx tailwindcss -i ./css/main.css -o ./dist/main.css --minify",
+    "build:watch": "npx tailwindcss -i ./css/main.css -o ./dist/main.css --watch",
+    "lint:fix": "npx prettier --write --prose-wrap always ."
   },
   "private": true,
   "keywords": [
     "react",
     "reactjs",
     "js",
-    "javascript"
+    "javascript",
+    "reactnative",
+    "rn",
+    "aws"
   ],
   "author": "Peter J Langley",
   "homepage": "https://pjlangley.com",
   "browserslist": [
     "defaults"
-  ],
-  "devDependencies": {
-    "autoprefixer": "^9.8.2",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "node-sass": "^4.14.1",
-    "postcss-cli": "^7.1.1",
-    "prettier": "^2.0.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{html,scss,md}": "prettier --write --prose-wrap always",
-    "*.svg": "prettier --write --parser html"
-  }
+  ]
 }
