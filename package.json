@@ -1,6 +1,6 @@
 {
-  "name": "pjlangley.com",
-  "version": "3.0.0",
+  "name": "pjlangley.github.io",
+  "version": "3.0.1",
   "description": "Personal services website for Peter J Langley",
   "repository": {
     "type": "git",
@@ -18,11 +18,10 @@
     "js",
     "javascript",
     "reactnative",
-    "rn",
     "aws"
   ],
   "author": "Peter J Langley",
-  "homepage": "https://pjlangley.com",
+  "homepage": "https://pjlangley.github.io",
   "browserslist": [
     "defaults"
   ]
